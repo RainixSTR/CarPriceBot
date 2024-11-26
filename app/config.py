@@ -1,7 +1,8 @@
 import os
 from dotenv import load_dotenv
 
-dotenv_path = os.path.join('app/data', '.env')
+base_dir = os.path.dirname(os.path.abspath(__file__))
+dotenv_path = os.path.join(base_dir, 'data', '.env')
 
 load_dotenv(dotenv_path)
 
